@@ -4,6 +4,8 @@ alias ref="source ~/.bashrc"
 alias yth='yt-dlp --extract-audio --audio-format mp3 --output "%(uploader)s%(title)s.%(ext)s"'
 alias ytv='yt-dlp -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best  --add-metadata -i --output "/home/tom/Videos/%(uploader)s%(title)s.%(ext)s" '
 alias ytvs='yt-dlp -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best --write-srt --sub-lang en --add-metadata -i --output "/home/tom/Videos/%(uploader)s%(title)s.%(ext)s" '
+alias cpr="rsync --partial --progress --append --rsh=ssh -r -h "
+alias mvr="rsync --partial --progress --append --rsh=ssh -r -h --remove-sent-files"
 
 # FUNCTIONS
 
